@@ -60,16 +60,32 @@ body{
 .Intro{
     position: absolute;
     top: 300px;
+    margin: 10px;
+}
+.Intro p{
+    width: 600px;
+    margin: 20px;
 }
 /*Amout Me style*/
 .About{
     position:absolute;
     top: 500px;
+    margin: 10px;
 }
+.About p{
+    width: 600px;
+    margin: 20px;
+}
+
 /*Skills*/
 .Skills{
     position: absolute;
-    top: 700px;
+    top: 800px;
+    margin: 10px;
+}
+.Skills p{
+    width: 600px;
+    margin: 20px;
 }
 
 @media only screen and (max-width: 480px){
