@@ -1,9 +1,8 @@
 
 
 body{
-    background-color: aqua;
-   
-    
+    background-color: aqua; 
+    zoom: 195%;
 }
 .img01{
     width: 200px;
@@ -29,6 +28,50 @@ body{
     left: 220px;
     text-align: center;
 }
+/*Menu style*/
+.menu{
+    width: 760px;
+    position: absolute;
+    top:230px;
+    left: 10px;
+}
+.menu ul{
+    list-style: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+
+}
+.menu a:hover{
+    background-color: rgb(58, 58, 58);
+}
+.menu li{
+    float: left;
+}
+/*Introduction style*/
+.Intro{
+    position: absolute;
+    top: 300px;
+}
+/*Amout Me style*/
+.About{
+    position:absolute;
+    top: 500px;
+}
+/*Skills*/
+.Skills{
+    position: absolute;
+    top: 700px;
+}
+
 @media only screen and (max-width: 480px){
     .img01{
         width: 50px;
