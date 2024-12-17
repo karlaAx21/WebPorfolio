@@ -1,7 +1,7 @@
 
 
 body{
-    background-color: aqua; 
+    background-color: black; 
     zoom: 195%;
 }
 .img01{
@@ -14,13 +14,13 @@ body{
     width: 550px;
     height: 50px;
     text-align: center;
-    background-color: bisque;
+    background-color: rgb(179, 101, 190);
     position: absolute;
     top: 0px;
     left: 220px;
 }
 .contact{
-    background-color: blueviolet;
+    background-color: palevioletred;
     width: 550px;
     height: 145px;
     position: absolute;
@@ -37,13 +37,13 @@ body{
 }
 .menu ul{
     list-style: none;
-    background-color: black;
+    background-color: rgb(179, 101, 190);
     padding: 0px;
     margin: 0px;
     overflow: hidden;
 }
 .menu a{
-    color: aliceblue;
+    color: black;
     text-decoration: none;
     padding: 15px;
     display: block;
@@ -51,13 +51,14 @@ body{
 
 }
 .menu a:hover{
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(155, 87, 164);
 }
 .menu li{
     float: left;
 }
 /*Introduction style*/
 .Intro{
+    color: rgb(179, 101, 190);
     position: absolute;
     top: 300px;
     margin: 10px;
@@ -68,6 +69,7 @@ body{
 }
 /*Amout Me style*/
 .About{
+    color: rgb(179, 101, 190);
     position:absolute;
     top: 500px;
     margin: 10px;
@@ -79,6 +81,7 @@ body{
 
 /*Skills*/
 .Skills{
+    color: rgb(179, 101, 190);
     position: absolute;
     top: 800px;
     margin: 10px;
@@ -87,19 +90,56 @@ body{
     width: 600px;
     margin: 20px;
 }
+/*Projects*/
+.Projects{
+    color: rgb(179, 101, 190);
+    position: absolute;
+    top: 950px;
+    margin: 10px;
+}
+.Projects a{
 
+    text-decoration: none;
+    color: black;
+    background-color: rgb(24, 183, 117);
+    width: 50px;
+    border-style: inset;
+
+}
+/*dowload*/
+.DW{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: blueviolet;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    height: 20px;
+    width: 80px;
+    text-align: center;
+    border-style: inset;
+
+}
+
+.email{
+    position: absolute;
+    color: white;
+    top: 300px;
+    margin: 10px;
+    height: 500px;
+}
 @media only screen and (max-width: 480px){
-    .img01{
-        width: 50px;
-        height: 50px;
+    body{
+        background-color: azure;
+        zoom: 58%
     }
-    .head_t{
-        color: blue;
-        border: 5px outset green;
-        position: absolute;
-        top: 50px;
-        left: 70px;
-        width: 200px;
-        height: 50px;
     
 }
+@media only screen and (min-width: 481px) and (max-width: 767px){
+    body{
+        background-color: rgb(13, 78, 110);
+        zoom: 98%;
+    }  
+}
+/**/

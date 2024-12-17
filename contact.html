@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel ="stylesheet" href="styleWeb.css">
+        <title>Contact Form</title>
+    </head>
+<body>
+
+    <img class = "img01" src ="Avatar.jpeg" alt="beach">
+    <h1 class ="head_t">Hello, My name is Karla A. Ramirez</h1>
+    <div class="contact">
+        <p>Contact Information</p>
+        <p>email: example@email.com</p>
+        <p>phone number: (123)456-7890</p>
+    </div>
+    <nav class = menu>
+        <ul>
+            <li><a href="main_page.html#01">Introduction</a></li>
+            <li><a href="main_page.html#02">About Me</a></li>
+            <li><a href="main_page.html#03">Skills</a></li>
+            <li><a href="main_page.html#04">Projects</a></li>
+            <li><a href="#05">Contact Me</a></li>
+        </ul>
+    </nav>
+   <!--Contact form -->
+   <div class = "email" id = "05">
+    <h1>Contact Form</h1>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init("fdivwN_nZfBBEZqu9");
+        })();
+        </script>
+        <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('outlook', 'WebPorfile', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                        alert('Message sent successfully!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                        alert('Failed to send the message.');
+                    });
+            });
+        }
+    </script>
+   <form id="contact-form">
+    <!-- To simplify the tutorial, the value is static. -->
+    <input type="hidden" name="contact_number" value="697483">
+    <label>Name</label>
+    <input type="text" name="user_name">
+    <label>Email</label>
+    <input type="email" name="user_email">
+    <label>Message</label>
+    <textarea name="message"></textarea>
+    <input type="submit" value="Send">
+    </form>
+   </div>
+   
+</body>
+</html>
