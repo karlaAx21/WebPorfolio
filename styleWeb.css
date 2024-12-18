@@ -123,12 +123,85 @@ body{
 }
 
 .email{
+    text-align: center;
+    background-color: rgb(108, 44, 107);
     position: absolute;
     color: white;
     top: 300px;
     margin: 10px;
-    height: 500px;
+    height: 400px;
+    width: 730px;
 }
+.Name{
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    zoom: 200%;
+    margin: 10px;
+}
+.Name:hover{
+    color: black;
+}
+.Name input{
+    font-size: 7px;
+    width: 100px;
+    height: 10px;
+}
+.e_mail{
+    position: absolute;
+    top: 60px;
+    left: 90px;
+    zoom: 200%;
+    margin: 10px;
+}
+.e_mail:hover{
+    color: black;
+}
+.e_mail input{
+    font-size: 7px;
+    width: 100px;
+    height: 10px;
+    
+}
+.Massg{
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    zoom: 200%;
+    margin: 10px;
+}
+.Massg:hover{
+    color: black;}
+.Massg textarea{
+    font-size: 7px;
+    position: absolute;
+    top: 0%;
+    width: 83px;
+    height: 30px;
+    left: 60px;
+
+}
+.sm{
+    position: absolute;
+    top: 155px;
+    right: 170px;
+    zoom: 200%;
+}
+.sm input{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    font-size: 10px;
+    height: 20px;
+    width: 40px;
+    
+}
+.sm input:hover{
+    color: black;
+    background-color: white;
+}
+
 @media only screen and (max-width: 480px){
     body{
         background-color: azure;
